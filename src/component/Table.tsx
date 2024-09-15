@@ -27,7 +27,7 @@ const Table: React.FC<TableProps> = (props) => {
 
   useEffect(() => {
     props.fetchAllData();  // Trigger Redux action to fetch data
-  }, [props.fetchAllData]);
+  }, [props]);
 
   useEffect(() => {
     if (props.allData) {
